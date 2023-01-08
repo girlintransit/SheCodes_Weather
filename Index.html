@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<link
+			rel="stylesheet"
+			href="src/styles.css"
+		/>
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<title>Weather app</title>
+	</head>
+	<body>
+		<div class="logo">
+			<img
+				src="src/logo.png"
+				class="logo"
+				alt="..."
+			/>
+		</div>
+		<br />
+		<form id="form-city">
+			<input
+				class="form-input-city"
+				id="form-input-city"
+				type="text"
+				placeholder="Enter a city"
+			/>
+			<input
+				class="form-submit-button"
+				id="form-submit-button"
+				type="submit"
+				value="Search"
+			/>
+		</form>
+		<br />
+		<div class="main-container">
+			<div class="primary-container">
+				<div class="column left">
+					<div class="dataGroup">
+						<div
+							class="current-temp"
+							id="current-temp"
+						>
+							<span
+								class="current-temp-value"
+								id="current-temp-value"
+								>16</span
+							>
+							<span id="current-temp-unit">°C</span>
+						</div>
+						<div
+							class="current-city"
+							id="current-city"
+						>
+							Tokyo
+						</div>
+						<br />
+						<div
+							class="current-description"
+							id="current-description"
+						>
+							Scattered clouds
+						</div>
+						<div class="current-humidity">
+							HUMIDITY:
+							<span
+								class="current-humidity-value"
+								id="current-humidity-value"
+								>88</span
+							>%
+						</div>
+						<div class="current-wind">
+							WIND:
+							<span
+								class="current-wind-value"
+								id="current-wind-value"
+							>
+								5</span
+							>m/s
+						</div>
+					</div>
+				</div>
+				<div class="column right">
+					<div class="column-right-group">
+						<div class="column-right-1 column width">
+							<div class="card-title">Mon</div>
+							<hr />
+							<div class="card-body">
+								<span class="Forecast-Group1-Temp-Max">11° </span>
+								<span class="Forecast-Group1-Temp-Min">11°</span>
+							</div>
+							<div class="card-icon">
+								<img
+									src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+									class="card-img-top"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<div class="column-right-2 column width">
+							<div class="card-title">Tue</div>
+							<hr />
+							<div class="card-body">
+								<span class="Forecast-Group1-Temp-Max">11° </span>
+								<span class="Forecast-Group1-Temp-Min">11°</span>
+							</div>
+							<div class="card-icon">
+								<img
+									src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+									class="card-img-top"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<div class="column-right-3 column width">
+							<div class="card-title">Wed</div>
+							<hr />
+							<div class="card-body">
+								<span class="Forecast-Group1-Temp-Max">11° </span>
+								<span class="Forecast-Group1-Temp-Min">11°</span>
+							</div>
+							<div class="card-icon">
+								<img
+									src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+									class="card-img-top"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<div class="column-right-4 column width">
+							<div class="card-title">Thu</div>
+							<hr />
+							<div class="card-body">
+								<span class="Forecast-Group1-Temp-Max">11° </span>
+								<span class="Forecast-Group1-Temp-Min">11°</span>
+							</div>
+							<div class="card-icon">
+								<img
+									src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+									class="card-img-top"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<div class="column-right-5 column width">
+							<div class="card-title">Fri</div>
+							<hr />
+							<div class="card-body">
+								<span class="Forecast-Group1-Temp-Max">11° </span>
+								<span class="Forecast-Group1-Temp-Min">11°</span>
+							</div>
+							<div class="card-icon">
+								<img
+									src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+									class="card-img-top"
+									alt="..."
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div
+			class="display-time"
+			id="display-time"
+		>
+			<span id="display-date">Fri</span>
+			<span id="display-timestamp">23:04</span>
+		</div>
+		<div class="design-footer">⬩⬩⬩⬩</div>
+		<div class="footer">
+			Open-source code by Sheena Better on
+			<a href="https://github.com/girlintransit/Weather-App"> Github </a>
+			and powered by Netlify
+		</div>
+	</body>
+	<script src="src/script.js"></script>
+</html>

@@ -1,0 +1,181 @@
+/* background */
+body {
+	background-color: #f0ebe1;
+}
+
+.logo {
+	float: left;
+	width: 100px;
+}
+
+/* form and buttom */
+#form-city {
+	float: right;
+}
+
+.form-input-city {
+	color: orangered;
+	font-size: 15px;
+	letter-spacing: 0.5mm;
+	background-color: #f0ebe1;
+	padding: 5px 10px;
+	border: none;
+	border-width: 0.01mm;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+}
+
+.form-submit-button {
+	color: orangered;
+	font-size: 15px;
+	letter-spacing: 0.5mm;
+	background-color: #f0ebe1;
+	padding: 5px 10px;
+	margin-right: 10px;
+	border: 15px solid orangered;
+	border-width: 0.02mm;
+	border-radius: 50px;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	outline: none;
+}
+
+.form-submit-button:hover {
+	background-color: orangered;
+	color: #f0ebe1;
+}
+
+::placeholder {
+	font-style: italic;
+}
+.no-outline:focus {
+	outline: none;
+}
+
+/*current container*/
+.primary-container {
+	display: block;
+	max-width: 3000px;
+	padding: 60px;
+}
+/*current column 1*/
+#current-temp-value {
+	font-size: 100px;
+}
+#current-temp-unit {
+	font-size: 20px;
+}
+#current-city {
+	font-size: 100px;
+	color: orangered;
+	letter-spacing: 2mm;
+	padding-bottom: 10px;
+}
+#current-description {
+	font-size: 30px;
+	font-family: sans-serif;
+	letter-spacing: 1mm;
+	padding-bottom: 20px;
+}
+
+.current-humidity {
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 1mm;
+	padding-bottom: 20px;
+}
+
+.current-wind {
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 1mm;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+	height: 400px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+	width: 30%;
+}
+/* right column group */
+.right {
+	width: 60%;
+}
+
+.column-right-group {
+	float: left;
+	width: 100%;
+}
+
+.width {
+	width: 16%;
+	height: 580px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+/* right column group - content */
+.card-title {
+	text-align: left;
+	font-size: 25px;
+	color: orangered;
+	font-family: Serif;
+	font-weight: lighter;
+}
+
+.card-body {
+	text-align: left;
+}
+.card-img-top {
+	float: left;
+	padding-top: 20px;
+	width: 100px;
+	filter: grayscale();
+}
+
+.Forecast-Group1-Temp-Max {
+	font-family: helvetica;
+	font-weight: bolder;
+	font-size: 15px;
+}
+.Forecast-Group1-Temp-Min {
+	font-family: helvetica;
+	font-size: 15px;
+	color: grey;
+}
+
+/* display time */
+.display-time {
+	font-size: 250px;
+	color: orangered;
+	font-family: Helvetica;
+	padding-top: 350px;
+	text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* foot */
+.design-footer {
+	margin: 0 auto;
+	font-size: 10px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.footer {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 10px;
+	font-family: sans-serif;
+}
